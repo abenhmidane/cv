@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO Meta Tags -->
+  <title>Anouar Ben Hmidane | Test Automation Leader & Entrepreneur</title>
+  <meta name="description" content="Senior Test Automation Leader & Entrepreneur with 10+ years of experience in QA automation, DevOps, and Agile methodologies. Expert in Cypress, Playwright, Selenium, and CI/CD implementation." />
+  <meta name="keywords" content="Test Automation, QA Leader, DevOps, Cypress, Playwright, Selenium, CI/CD, Quality Assurance, Software Testing" />
+  <meta name="author" content="Anouar Ben Hmidane" />
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Anouar Ben Hmidane | Test Automation Leader & Entrepreneur" />
+  <meta property="og:description" content="Senior Test Automation Leader & Entrepreneur specializing in QA automation, DevOps, and Agile methodologies." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://anouarbh.info" />
+  <meta property="og:image" content="https://anouarbh.info/profile-image.jpg" />
+  <meta property="og:site_name" content="Anouar Ben Hmidane" />
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Anouar Ben Hmidane | Test Automation Leader & Entrepreneur" />
+  <meta name="twitter:description" content="Senior Test Automation Leader & Entrepreneur specializing in QA automation, DevOps, and Agile methodologies." />
+  <meta name="twitter:image" content="https://anouarbh.info/profile-image.jpg" />
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://anouarbh.info" />
+  
+  <!-- Robots Meta Tag -->
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" /> <!-- Add your favicon -->
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" /> <!-- Add your Apple touch icon -->
+
+  <!-- Schema.org Markup -->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Anouar Ben Hmidane",
+      "jobTitle": "Test Automation Leader & Entrepreneur",
+      "email": "bhmiden.anouar@gmail.com",
+      "url": "https://anouarbh.info",
+      "sameAs": [
+        "https://www.linkedin.com/in/anouar-ben-hmidane",
+        "https://anouarbh.info"
+      ],
+      "workExperience": [
+        {
+          "@type": "WorkPosition",
+          "name": "Test Automation SME",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Ueat"
+          },
+          "startDate": "2022"
+        },
+        {
+          "@type": "WorkPosition",
+          "name": "Test Automation Lead",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "LogMeIn"
+          },
+          "startDate": "2021",
+          "endDate": "2022"
+        }
+      ],
+      "knowsAbout": [
+        "Test Automation",
+        "DevOps",
+        "Agile Methodologies",
+        "Cypress",
+        "Playwright",
+        "Selenium",
+        "CI/CD",
+        "Quality Assurance"
+      ],
+      "education": [
+        {
+          "@type": "EducationalOccupancy",
+          "educationalLevel": "Bachelor's Degree",
+          "programName": "Software Engineering",
+          "provider": {
+            "@type": "CollegeOrUniversity",
+            "name": "École Polytechnique de Montréal"
+          },
+          "startDate": "2008",
+          "endDate": "2012"
+        },
+        {
+          "@type": "EducationalOccupancy",
+          "educationalLevel": "Technical Diploma",
+          "programName": "IT Network Technician",
+          "provider": {
+            "@type": "CollegeOrUniversity",
+            "name": "ISET RADES"
+          },
+          "startDate": "2004",
+          "endDate": "2007"
+        }
+      ]
+    }
+  </script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  
+  <style>
+    :root {
+      --bg-color: #0f0f0f;
+      --text-color: #f0f0f0;
+      --accent: #00ff9d;
+      --accent-dark: #00cc7d;
+      --grid: rgba(255, 255, 255, 0.02);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Grid Background */
+    .grid-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: 
+        linear-gradient(var(--grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+      background-size: 30px 30px;
+      z-index: -1;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    /* Header */
+    header {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      padding: 2rem 0;
+    }
+
+    .glitch-text {
+      font-size: 5rem;
+      font-weight: 700;
+      color: var(--text-color);
+      position: relative;
+      text-shadow: 
+        0.05em 0 0 rgba(255, 0, 0, 0.75),
+        -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+        0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+      animation: glitch 500ms infinite;
+    }
+
+    .subtitle {
+      font-size: 1.5rem;
+      color: var(--accent);
+      margin-top: 1rem;
+      font-weight: 300;
+    }
+
+    /* Sections */
+    section {
+      margin: 5rem 0;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.5s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: var(--accent);
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+    }
+
+    h2::after {
+      content: '';
+      height: 1px;
+      background: var(--accent);
+      flex: 1;
+      margin-left: 1rem;
+      opacity: 0.3;
+    }
+
+    /* Experience Cards */
+    .experience-card {
+      padding: 2rem;
+      margin-bottom: 3rem;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      background: rgba(255, 255, 255, 0.02);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .experience-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: var(--accent);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .experience-card:hover {
+      border-color: rgba(255, 255, 255, 0.1);
+      transform: translateX(10px);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .experience-card:hover::before {
+      opacity: 1;
+    }
+
+    .experience-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+    }
+
+    .experience-card ul li {
+      margin-bottom: 0.5rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    .experience-card ul li::before {
+      content: '▹';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+
+    .tech-stack {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .tech-tag {
+      font-size: 0.8rem;
+      padding: 0.3rem 0.8rem;
+      background: rgba(0, 255, 157, 0.1);
+      border: 1px solid rgba(0, 255, 157, 0.2);
+      border-radius: 20px;
+      color: var(--accent);
+      transition: all 0.3s ease;
+    }
+
+    .tech-tag:hover {
+      background: rgba(0, 255, 157, 0.15);
+      transform: translateY(-2px);
+    }
+
+    .experience-card span {
+      display: inline-block;
+      color: var(--accent);
+      font-size: 0.9rem;
+      opacity: 0.8;
+      margin-bottom: 1rem;
+    }
+
+    /* Skills */
+    .skills-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .skills-category h3 {
+      color: var(--accent);
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .skills-category h3::after {
+      content: '';
+      height: 1px;
+      background: var(--accent);
+      flex: 1;
+      margin-left: 1rem;
+      opacity: 0.3;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 1rem;
+    }
+
+    .skill-tag {
+      padding: 0.8rem 1.2rem;
+      background: rgba(0, 255, 157, 0.05);
+      border: 1px solid rgba(0, 255, 157, 0.1);
+      border-radius: 8px;
+      text-align: center;
+      transition: all 0.3s ease;
+      cursor: default;
+    }
+
+    .skill-tag:hover {
+      background: rgba(0, 255, 157, 0.1);
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 255, 157, 0.1);
+    }
+
+    /* Contact */
+    .contact-links {
+      display: flex;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .contact-links a {
+      color: var(--text-color);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .contact-links a:hover {
+      color: var(--accent);
+    }
+
+    /* Animations */
+    @keyframes glitch {
+      0% {
+        text-shadow: 
+          0.05em 0 0 rgba(255, 0, 0, 0.75),
+          -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+          0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+      }
+      14% {
+        text-shadow: 
+          0.05em 0 0 rgba(255, 0, 0, 0.75),
+          -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+          -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+      }
+      15% {
+        text-shadow: 
+          -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+          0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+          -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .glitch-text {
+        font-size: 3rem;
+      }
+      
+      .container {
+        padding: 1rem;
+      }
+      
+      section {
+        margin: 4rem 0;
+      }
+
+      .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      }
+    }
+
+    /* Add scroll indicator */
+    .scroll-indicator {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: var(--accent);
+      opacity: 0.7;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .scroll-indicator:hover {
+      opacity: 1;
+      transform: translateX(-50%) translateY(-5px);
+    }
+
+    .scroll-indicator span {
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .scroll-indicator i {
+      animation: bounce 2s infinite;
+    }
+
+    /* Add bounce animation */
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-10px);
+      }
+      60% {
+        transform: translateY(-5px);
+      }
+    }
+
+    /* Hide text visually but keep it available for screen readers */
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+
+    /* Style footer */
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      opacity: 0.7;
+      font-size: 0.9rem;
+    }
+
+    /* Add this section before the skills section */
+    .education-card {
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      background: rgba(255, 255, 255, 0.02);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .education-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: var(--accent);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .education-card:hover {
+      border-color: rgba(255, 255, 255, 0.1);
+      transform: translateX(10px);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .education-card:hover::before {
+      opacity: 1;
+    }
+
+    .education-card h3 {
+      color: var(--text-color);
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .education-card span {
+      display: inline-block;
+      color: var(--accent);
+      font-size: 0.9rem;
+      opacity: 0.8;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-bg"></div>
+  
+  <div class="container">
+    <header>
+      <h1 class="glitch-text">
+        <span class="visually-hidden">Anouar Ben Hmidane - Test Automation Leader & Entrepreneur</span>
+        Anouar Ben Hmidane
+      </h1>
+      <p class="subtitle">Test Automation Leader & Entrepreneur</p>
+      <div class="contact-links">
+        <a href="mailto:bhmiden.anouar@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://www.linkedin.com/in/anouar-ben-hmidane" target="_blank">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll Down</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </header>
+
+    <section id="profile">
+      <h2>Profile</h2>
+      <p>
+        Dynamic and results-driven Test Automation Leader with deep expertise in QA automation, 
+        DevOps, and Agile methodologies. Passionate about optimizing software quality and delivery pipelines.
+      </p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      
+      <div class="experience-card">
+        <h3>Test Automation SME – Ueat</h3>
+        <span>2022 - Present • Remote</span>
+        <ul>
+          <li>Designed and implemented enterprise-wide test automation strategy</li>
+          <li>Built Cypress-based test automation framework and migrated legacy tests to Playwright</li>
+          <li>Created Postman API test suite for robust API testing</li>
+          <li>Integrated E2E testing into CI/CD pipelines using GitHub Actions</li>
+          <li>Trained QA teams on automation best practices</li>
+        </ul>
+        <div class="tech-stack">
+          <span class="tech-tag">Cypress</span>
+          <span class="tech-tag">Postman</span>
+          <span class="tech-tag">Playwright</span>
+          <span class="tech-tag">GitHub Actions</span>
+        </div>
+      </div>
+
+      <div class="experience-card">
+        <h3>Test Automation Lead – LogMeIn</h3>
+        <span>2021 - 2022 • Remote</span>
+        <ul>
+          <li>Led test automation strategy for GoToMeeting Admin Platform</li>
+          <li>Developed Java-based REST-assured API testing framework</li>
+          <li>Created log parsing solutions for monitoring and debugging</li>
+          <li>Automated E2E tests and integrated into DevOps pipelines</li>
+        </ul>
+        <div class="tech-stack">
+          <span class="tech-tag">Java</span>
+          <span class="tech-tag">REST-assured</span>
+          <span class="tech-tag">Jenkins</span>
+          <span class="tech-tag">Elasticsearch</span>
+        </div>
+      </div>
+
+      <div class="experience-card">
+        <h3>Test Automation Lead – National Bank</h3>
+        <span>2017 - 2021 • Montreal, QC</span>
+        <ul>
+          <li>Led test automation transformation for Wealth Management division (60+ applications)</li>
+          <li>Managed and mentored 20+ automation specialists</li>
+          <li>Built robust test automation frameworks using Selenium, Java, Docker</li>
+          <li>Established visual testing strategy for UI regression</li>
+          <li>Coordinated performance testing for ORION/BNC Trading Platform</li>
+        </ul>
+        <div class="tech-stack">
+          <span class="tech-tag">Selenium</span>
+          <span class="tech-tag">Java</span>
+          <span class="tech-tag">Docker</span>
+          <span class="tech-tag">Jenkins</span>
+          <span class="tech-tag">Applitools</span>
+        </div>
+      </div>
+
+      <div class="experience-card">
+        <h3>Test Automation Lead – Desjardins</h3>
+        <span>2016 - 2017 • Montreal, QC</span>
+        <ul>
+          <li>Designed test automation framework for ATM modernization project</li>
+          <li>Developed automation testing strategies using Robot Framework</li>
+          <li>Integrated automated tests into CI/CD workflows</li>
+        </ul>
+        <div class="tech-stack">
+          <span class="tech-tag">Robot Framework</span>
+          <span class="tech-tag">Selenium</span>
+          <span class="tech-tag">JMeter</span>
+          <span class="tech-tag">Python</span>
+        </div>
+      </div>
+
+      <div class="experience-card">
+        <h3>Automation Testing Specialist – XMedius</h3>
+        <span>2012 - 2016 • Montreal, QC</span>
+        <ul>
+          <li>Developed test automation for cloud-based applications</li>
+          <li>Built scalable test frameworks using Ruby on Rails</li>
+        </ul>
+        <div class="tech-stack">
+          <span class="tech-tag">Ruby on Rails</span>
+          <span class="tech-tag">Selenium</span>
+          <span class="tech-tag">Cucumber</span>
+          <span class="tech-tag">Jenkins</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="education-card">
+        <h3>Bachelor's Degree in Software Engineering</h3>
+        <span>École Polytechnique de Montréal • 2008 - 2012</span>
+        <div class="tech-stack">
+          <span class="tech-tag">Software Engineering</span>
+          <span class="tech-tag">Computer Science</span>
+          <span class="tech-tag">Programming</span>
+        </div>
+      </div>
+
+      <div class="education-card">
+        <h3>IT Network Technician</h3>
+        <span>ISET RADES, Tunisia • 2004 - 2007</span>
+        <div class="tech-stack">
+          <span class="tech-tag">Networking</span>
+          <span class="tech-tag">IT Infrastructure</span>
+          <span class="tech-tag">System Administration</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      
+      <div class="skills-container">
+        <div class="skills-category">
+          <h3>Technical Skills</h3>
+          <div class="skills-grid">
+            <div class="skill-tag">Java</div>
+            <div class="skill-tag">Python</div>
+            <div class="skill-tag">Selenium</div>
+            <div class="skill-tag">Cypress</div>
+            <div class="skill-tag">Playwright</div>
+            <div class="skill-tag">Docker</div>
+            <div class="skill-tag">Jenkins</div>
+            <div class="skill-tag">AWS</div>
+            <div class="skill-tag">Git</div>
+            <div class="skill-tag">REST APIs</div>
+            <div class="skill-tag">CI/CD</div>
+            <div class="skill-tag">Performance Testing</div>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3>Leadership & Soft Skills</h3>
+          <div class="skills-grid">
+            <div class="skill-tag">Team Leadership</div>
+            <div class="skill-tag">Strategic Planning</div>
+            <div class="skill-tag">Mentoring</div>
+            <div class="skill-tag">Problem Solving</div>
+            <div class="skill-tag">Communication</div>
+            <div class="skill-tag">Agile/Scrum</div>
+            <div class="skill-tag">Project Management</div>
+            <div class="skill-tag">Stakeholder Management</div>
+            <div class="skill-tag">Cross-functional Collaboration</div>
+            <div class="skill-tag">Innovation</div>
+            <div class="skill-tag">Change Management</div>
+            <div class="skill-tag">Process Optimization</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="container">
+    <p>© <time datetime="2024">2024</time> Anouar Ben Hmidane. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Intersection Observer for section animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('section').forEach((section) => {
+      observer.observe(section);
+    });
+
+    // Mouse movement effect for grid background
+    document.addEventListener('mousemove', (e) => {
+      const grid = document.querySelector('.grid-bg');
+      const x = e.clientX / window.innerWidth;
+      const y = e.clientY / window.innerHeight;
+      
+      grid.style.transform = `translate(${x * 10}px, ${y * 10}px)`;
+    });
+
+    // Add smooth scroll for the scroll indicator
+    document.querySelector('.scroll-indicator').addEventListener('click', () => {
+      document.getElementById('profile').scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  </script>
+</body>
+</html>
