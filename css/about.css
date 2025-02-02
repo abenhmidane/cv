@@ -1,0 +1,141 @@
+/* About Page Styles */
+.about-section {
+  margin: 120px auto 60px;
+  max-width: 800px;
+}
+
+.about-header {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.about-header h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, var(--text-color), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: var(--accent);
+  opacity: 0.9;
+}
+
+.mission-statement {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-bottom: 4rem;
+  padding: 2rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 4rem 0;
+}
+
+.expertise-card {
+  padding: 2rem;
+  border-radius: 8px;
+  background: rgba(0, 255, 157, 0.05);
+  border: 1px solid rgba(0, 255, 157, 0.1);
+  transition: all 0.3s ease;
+}
+
+.expertise-card:hover {
+  transform: translateY(-5px);
+  background: rgba(0, 255, 157, 0.08);
+}
+
+.expertise-card h3 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.about-blog {
+  margin: 4rem 0;
+}
+
+.about-blog h2 {
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.about-blog ul {
+  list-style: none;
+  margin: 1.5rem 0;
+}
+
+.about-blog ul li {
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.about-blog ul li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+.connect-section {
+  margin-top: 4rem;
+  padding: 2rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.connect-links {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.connect-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  background: rgba(0, 255, 157, 0.05);
+  border: 1px solid rgba(0, 255, 157, 0.1);
+  transition: all 0.3s ease;
+}
+
+.connect-link:hover {
+  transform: translateY(-2px);
+  background: rgba(0, 255, 157, 0.08);
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .about-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .mission-statement {
+    font-size: 1.1rem;
+    padding: 1.5rem;
+  }
+
+  .expertise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .connect-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+} 
