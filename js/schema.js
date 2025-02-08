@@ -4,12 +4,12 @@ const blogSchema = {
   name: "Test Automation & Quality Engineering Blog",
   description:
     "Expert insights on Test Automation, DevOps, and Software Quality Engineering",
-  url: "https://anouarbenhm.dev",
+  url: "https://anouarbh.info",
   author: {
     "@type": "Person",
     name: "Anouar Ben Hmidane",
     jobTitle: "Test Automation Leader & Quality Engineering Entrepreneur",
-    url: "https://anouarbenhm.dev/about",
+    url: "https://anouarbh.info/about",
   },
 };
 

@@ -352,4 +352,24 @@ section h2::after {
   opacity: 0.3;
 }
 
+/* Update footer styles */
+footer {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  color: var(--text-color);
+  opacity: 0.8;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Container styles (if not already present) */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
 /* ... rest of your CSS ... */ 
